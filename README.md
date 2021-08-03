@@ -12,8 +12,16 @@ Along with the increase of available data, there are a host of machine learning 
 
 ### Data
 
-The dataset used was extracted from Kaggle and can be accessed via this [this](https://www.kaggle.com/dwiknrd/reviewuniversalstudio) link.
+The dataset used was extracted from Kaggle and can be accessed via this [this](https://www.kaggle.com/dwiknrd/reviewuniversalstudio) link. There are 50,847 total reviews spanning three Universal Studios theme parks (one each in Florida (U.S.A.), Japan, and Singapore. There are six features (columns), summarized as below:
 
+1.  "reviewer" - username of the reviewer on TripAdvisor
+2.  "rating" - integer rating assigned by the reviewer, from '1' (unsatisfied) to '5' (satisfied)
+3.  "written_date" - date stamp of the review
+4.  "title" - title of the review
+5.  "review_text" - text review logged by the visitor
+6.  "branch" - theme park branch reviewed.
+
+It is important to highlight that the dataset consists only of reviews that were originally submitted in English. This fact has large implications about the results of the analysis. Specifically, it means the model will be biased toward customer experiences of people who use English as their primary language. English-speakers often hold cultural norms and traits that are not shared by other cultures. Concretely, while English-speakers may have a positive impression of the available food at a park, it does not mean that others feel the same way!
 
 ### Methodology
 
