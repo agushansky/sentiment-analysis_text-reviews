@@ -27,8 +27,6 @@ It is important to highlight that the dataset consists only of reviews that were
 
 A couple of findings from EDA are worth noting and are summarized in the plots below. The first is that the number of reviews assigned to each park is imbalanced. Reviews assigned to the Universal Studios park in Florida make up over half of the available data-- and outnumber reviews assigned to Japan by a factor of nearly six. This imbalance will need to be addressed prior to modeling; otherwise, results will be biased toward oversampled data. The second finding is that the ratings themselves are imbalanced. The overwhelming majority of reviews assigned are four- and five-star reviews. This will also need to be corrected.
 
-show 2 plots
-
 ### Methodology
 
 The dataset was preprocessed prior to getting fit. 
