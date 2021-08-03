@@ -10,7 +10,7 @@ With the recent rise of public review websites like TripAdvisor, a gold mine of 
 
 Along with the increase of available data, there are a host of machine learning models and methods that can analyze it. Advances allow analysis and data scientists to use Natural Language Processing (NLP) methods and techniques to quickly vectorize text reviews and predict nominal sentiment. This project uses some of those techniques to analyze over 50,000 reviews of three Universal Studios theme parks.
 
-### Data
+### Dataset
 
 The dataset used was extracted from Kaggle and can be accessed via this [this](https://www.kaggle.com/dwiknrd/reviewuniversalstudio) link. There are 50,847 total reviews spanning three Universal Studios theme parks (one each in Florida (U.S.A.), Japan, and Singapore. There are six features (columns), summarized as below:
 
@@ -23,7 +23,15 @@ The dataset used was extracted from Kaggle and can be accessed via this [this](h
 
 It is important to highlight that the dataset consists only of reviews that were originally submitted in English. This fact has large implications about the results of the analysis. Specifically, it means the model will be biased toward customer experiences of people who use English as their primary language. English-speakers often hold cultural norms and traits that are not shared by other cultures. Concretely, while English-speakers may have a positive impression of the available food at a park, it does not mean that others feel the same way!
 
+### Exploratory Data Analysis (EDA)
+
+A couple of findings from EDA are worth noting and are summarized in the plots below. The first is that the number of reviews assigned to each park is imbalanced. Reviews assigned to the Universal Studios park in Florida make up over half of the available data-- and outnumber reviews assigned to Japan by a factor of nearly six. This imbalance will need to be addressed prior to modeling; otherwise, results will be biased toward oversampled data. The second finding is that the ratings themselves are imbalanced. The overwhelming majority of reviews assigned are four- and five-star reviews. This will also need to be corrected.
+
+show 2 plots
+
 ### Methodology
+
+The dataset was preprocessed prior to getting fit. 
 
 ### Results
 
