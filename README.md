@@ -2,9 +2,9 @@
 
 ### Problem Statement & Motivation
 
-Theme parks are at the center of spur-of-the-moment excursions and vacations in the U.S. and around the world. Millions flock each year to try the newest bone-ratting roller-coaster, or reach new heights at near-supersonic speeds. Theme parks are a hallmark of adventure-seekers and adrenaline-junkies, and they collectively bring in billions of dollars yearly. Park owners and operators are constantly looking for new ways to quantify their customers' experiences in order to create more meaningful experiences and drive profits. 
+Theme parks draw millions of visitors each year around the world. They are a hallmark of adventure-seekers and adrenaline-junkies, who flock to the newest bone-rattling roller coaster and revel at near-supersonic speeds. Park owners and operators are constantly evaluating ways to grow their brand and compete for their customers' hard-earned dollars. 
 
-With the recent rise of public review websites like TripAdvisor, a gold mine of data is available for processing. Sentiment analysis serves as a powerful framework to discover how customers *feel* about their experiences. Studies have consistently shown that customer sentiment correlates with key business metrics like retention and per-customer monetization. After all, it is that unmatched feeling that brings the masses back to their favorite theme parks. 
+With the recent advancement of public-review websites like TripAdvisor, a treasure trove of new data has become available for analysts. Sentiment analysis serves as a powerful framework with which to analyze review data. It helps decision-makers understand how customers *feel* about their experiences. Research has consistently shown that customer sentiment correlates with key business metrics, including retention and monetization. After all, it is that unmatched feeling -- that thrill -- that brings the masses back to their favorite theme parks year-after-year.
 
 Along with the increase of available data, there are a host of machine learning models and methods that can analyze it. Advances allow analysis and data scientists to use Natural Language Processing (NLP) methods and techniques to quickly vectorize text reviews and predict nominal sentiment. This project uses some of those techniques to analyze over 50,000 reviews of three Universal Studios theme parks.
 
