@@ -42,4 +42,4 @@ SVM results:
 LogReg results:  
 ![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/logistic_reg_results.jpg?raw=true)
 
-how can this be applied
+While sentiment prediction has its limitations, it also has some interesting use-cases. Such models can predict sentiment from many forms of input text, including those of suggestion boxes. They can also efficiently extract information from reviews that might otherwise be neglected (e.g., "neutral" or three-star reviews). Finally, customer sentiment can be used alongside star ratings to predict important outcomes, like whether customers are expected to return to a park or how much money they might spend per visit.
