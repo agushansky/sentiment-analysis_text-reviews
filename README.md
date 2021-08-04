@@ -36,6 +36,7 @@ The dataset was preprocessed prior to getting fit. Three-star reviews were rmove
 
 Classification reports using two classifiers -- Support Vector Machine (SVM) and Logistic Regression -- are shown below. Overall accuracy on the test data was about 90% for both classifiers. The close performance makes sense, since both classifiers are linear and parametric. The different objective functions results in slightly different results. For both models, the f-1 score was substantially better for positive reviews than negative ones. 
 
-
+![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/svm_results.jpg?raw=true)
+![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/logistic_reg_results.jpg?raw=true)
 
 how can this be applied
