@@ -30,8 +30,12 @@ A couple of findings from EDA are worth noting and are summarized in the plots b
 
 ### Methodology
 
-The dataset was preprocessed prior to getting fit. 
+The dataset was preprocessed prior to getting fit. Three-star reviews were rmoved for the purpose of the project. Punctuation was also removed to prepare the text to be converted to a matrix of token counts. Then, there was an 80/20 train/test split prior to modeling. I also re-weighted the classes to account for the imbalanced sampling. bigrams included.
 
 ### Results
 
+Classification reports using two classifiers -- Support Vector Machine (SVM) and Logistic Regression -- are shown below. Overall accuracy on the test data was about 90% for both classifiers. The close performance makes sense, since both classifiers are linear and parametric. The different objective functions results in slightly different results. For both models, the f-1 score was substantially better for positive reviews than negative ones. 
 
+
+
+how can this be applied
