@@ -1,4 +1,4 @@
-### Using customer review data about theme parks to make informed strategic decisions
+### Using customer reviews to make informed strategic decisions about theme parks
 
 #### Problem Statement & Motivation
 
