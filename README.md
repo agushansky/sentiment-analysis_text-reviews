@@ -21,7 +21,7 @@ It is also important to note that this dataset is comprised of only reviews that
 
 ### Exploratory Data Analysis (EDA)
 
-A couple of findings from EDA are worth highlighting. Firstly, the number of reviews assigned to each park is majorly imbalanced. Reviews assigned to the Universal Studios park in Florida make up over half of all available reviews -- and they outnumber reviews assigned to Japan by a factor of nearly six! This imbalance needs to be addressed prior to modeling when comparing reviews between parks; otherwise, the results will be biased toward oversampled data. The second finding is that the distribution of star-ratings is imbalanced. Four- and five-star ratings make up the overwhelming majority of all reviews. This will also need to be accounted for, specifically when doing sentiment analysis.
+A couple of findings from EDA are worth highlighting. (They are both visuallized below.) Firstly, the number of reviews assigned to each park is majorly imbalanced. Reviews assigned to the Universal Studios park in Florida make up over half of all available reviews -- and they outnumber reviews assigned to Japan by a factor of nearly six! This imbalance needs to be addressed prior to modeling when comparing reviews between parks; otherwise, the results will be biased toward oversampled data. The second finding is that the distribution of star-ratings is imbalanced. Four- and five-star ratings make up the overwhelming majority of all reviews. This will also need to be accounted for, specifically when doing sentiment analysis.
 
 ![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/rating_dist.png?raw=true)
 ![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/park_dist.png?raw=true)
@@ -30,16 +30,18 @@ A couple of findings from EDA are worth highlighting. Firstly, the number of rev
 
 There are a host of available machine-learning classifiers that are appropriate to perform sentiment analysis on this data. I focus on two-- Support Vector Machine (SVM) and Logistic Regression. Each method provides a linear classifier that can work well on sparse data, as is the case here. 
 
-Prior to fitting these classifiers, there are a few preprocessing steps of note. The resulting models are designed to predict binary sentiment (i.e. positive or negative) on text reviews. To this end, three-star reviews were removed for the purpose of the analysis. Punctuation was also stripped to prepare the text to be converted into a matrix of token counts. Finally, the data was split with a train-to-test ratio of 4-to-1 prior to modeling. Classes were re-weighted prior to fitting the classifier to account for imbalanced sampling, as described above. 
+Prior to fitting these classifiers, there are a few preprocessing steps of note. The resulting models are designed to predict binary sentiment (i.e. positive or negative) on text reviews. To this end, three-star reviews were removed for the purpose of the analysis. Punctuation was also stripped to prepare the text to be converted into a matrix of token counts. In NLP-speak, unigrams and bigrams were used in creating this matrix. In layman's terms, single words and two-word phrases were used to create the matrix. More sophisticated models will use higher-order n-grams, but this is sufficient for the purpose of the analysis (and to preserve computational efficiency). Finally, the data was split with a train-to-test ratio of 4-to-1 prior to modeling. Classes were re-weighted prior to fitting the classifier to account for imbalanced sampling, as described above. 
 
-### Results
+### Results & Discussion
 
-Classification reports using two classifiers -- Support Vector Machine (SVM) and Logistic Regression -- are shown below. Overall accuracy on the test data was about 90% for both classifiers. The close performance makes sense, since both classifiers are linear and parametric. The different objective functions results in slightly different results. For both models, the f-1 score was substantially better for positive reviews than negative ones. 
+The resulting classification reports are shown below. Accuracy on the test set was quite high for both classifiers -- near 90%. The different objective functions for each classifier resulted in slightly different results for each class. Interestingly, the F1 score was substantially better for positive reviews compared to negative ones in both models. This makes sense, as negativity is a bit more difficult to decipher.
 
 SVM results:  
+
 ![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/svm_results.jpg?raw=true)
 
 LogReg results:  
+
 ![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/logistic_reg_results.jpg?raw=true)
 
-While sentiment prediction has its limitations, it also has some interesting use-cases. Such models can predict sentiment from many forms of input text, including those of suggestion boxes. They can also efficiently extract information from reviews that might otherwise be neglected (e.g., "neutral" or three-star reviews). Finally, customer sentiment can be used alongside star ratings to predict important outcomes, like whether customers are expected to return to a park or how much money they might spend per visit.
+Ultimately, models like these can be used to predict sentiment from many forms of input text, including suggestion boxes and online reviews which don't specify the park branch. They can also be used to extract important information from reviews that might otherwise be ignored (e.g. from "neutral" or three-star reviews). Customer sentiment can be used along with assigned star-ratings to predict important outcomes, like customer retention and monetization. Ultimately, while sentiment-prediction models are just one piece of the analytics puzzle, decision-makers would be wise to use them to help make informed decisions.
