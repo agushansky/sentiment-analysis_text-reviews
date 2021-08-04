@@ -17,7 +17,7 @@ The dataset used was extracted from Kaggle and can be accessed via this [this](h
 5.  "review_text" - text review logged by the visitor
 6.  "branch" - theme park that was reviewed
 
-It is important to note that this dataset is comprised of only reviews that were originally submitted in English. This fact has substantial implications on the conclusions that can be drawn from this analysis. Specifically, results will be biased toward sentiments that are shared by individuals whose primary language is English. To provide a concrete example of potential consequences, while English-speakers might positively rate food at a park, it certainly does not mean that others will feel the same way!
+It is important to note that this dataset is comprised of only reviews that were originally submitted in English. This fact has substantial implications on the conclusions that can be drawn from the resulting analysis. Specifically, results will be biased toward sentiments that are shared by individuals whose primary language is English. To provide a concrete example, while English-speakers might collectively rate the food positively at a park, it certainly does not mean that others will do the same!
 
 ### Exploratory Data Analysis (EDA)
 
