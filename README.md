@@ -28,10 +28,9 @@ A couple of findings from EDA are worth highlighting. Firstly, the number of rev
 
 ### Methodology
 
+There are a host of available machine-learning classifiers that are appropriate to perform sentiment analysis on this data. I focus on two-- Support Vector Machine (SVM) and Logistic Regression. Each method provides a linear classifier that can work well on sparse data, as is the case here. 
 
-Along with the increase of available data, there are a host of machine learning models and methods that can analyze it. Advances allow analysis and data scientists to use Natural Language Processing (NLP) methods and techniques to quickly vectorize text reviews and predict nominal sentiment. This project uses some of those techniques to analyze over 50,000 reviews of three Universal Studios theme parks.
-
-The dataset was preprocessed prior to getting fit. Three-star reviews were rmoved for the purpose of the project. Punctuation was also removed to prepare the text to be converted to a matrix of token counts. Then, there was an 80/20 train/test split prior to modeling. I also re-weighted the classes to account for the imbalanced sampling. bigrams included.
+Prior to fitting these classifiers, there are a few preprocessing steps of note. The resulting models are designed to predict binary sentiment (i.e. positive or negative) on text reviews. To this end, three-star reviews were removed for the purpose of the analysis. Punctuation was also stripped to prepare the text to be converted into a matrix of token counts. Finally, the data was split with a train-to-test ratio of 4-to-1 prior to modeling. Classes were re-weighted prior to fitting the classifier to account for imbalanced sampling, as described above. 
 
 ### Results
 
