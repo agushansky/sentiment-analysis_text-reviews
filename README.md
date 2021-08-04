@@ -4,7 +4,7 @@
 
 Theme parks are a hallmark of adventure-seekers and adrenaline-junkies alike. Millions of annual visitors from around the world flock to the newest bone-rattling roller coaster and revel at near-supersonic speeds. On the business side of things, owners and operators are constantly evaluating ways to improve the overall experience and earn their customers' hard-earned dollars. 
 
-With the recent ascent of public-review websites like TripAdvisor, a treasure trove of new data has become available for analysts. Sentiment analysis serves as a powerful framework with which to analyze reviews. It helps decision-makers understand how customers *feel* about their experiences. Research has consistently shown that customer sentiment correlates with key business metrics, including retention and monetization. After all, it is that unmatched feeling -- that thrill -- that brings the masses back to their favorite theme parks year-after-year.
+With the recent ascent of public-review websites like TripAdvisor, a treasure trove of new data has become available for analysts. Sentiment analysis serves as a powerful framework with which to analyze reviews. It helps decision-makers understand how customers *feel* about their experiences. Research has consistently shown that customer sentiment correlates with key business metrics, including retention and monetization. After all, it is that unmatched feeling -- that thrill -- that brings people back to their favorite theme parks year-after-year.
 
 ### Dataset
 
