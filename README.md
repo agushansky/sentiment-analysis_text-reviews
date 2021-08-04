@@ -8,7 +8,7 @@ With the recent ascent of public-review websites like TripAdvisor, a treasure tr
 
 ### Dataset
 
-The dataset used was extracted from Kaggle and can be accessed via this [this](https://www.kaggle.com/dwiknrd/reviewuniversalstudio) link. There are 50,847 total reviews that span three Universal Studios theme parks (one each in Florida, Japan, and Singapore). There are six columns, which can be summarized as follows:
+The dataset used was extracted from Kaggle and can be accessed via this [this](https://www.kaggle.com/dwiknrd/reviewuniversalstudio) link. There are 50,847 total reviews that span three Universal Studios theme parks (one each in Florida, Japan, and Singapore). The fix features can be summarized as follows:
 
 1.  "reviewer" - username of the reviewer on TripAdvisor
 2.  "rating" - integer rating assigned by the reviewer, from '1' (unsatisfied) to '5' (satisfied)
