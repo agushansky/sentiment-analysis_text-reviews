@@ -28,20 +28,20 @@ A couple of findings from EDA are worth highlighting and are visuallized below. 
 
 ### Methodology
 
-There are a host of available machine-learning classifiers that are appropriate to perform sentiment analysis on this data. I focus on two-- Support Vector Machine (SVM) and Logistic Regression. Each method provides a linear classifier that can work well on sparse data, as is the case here. 
+There are a host of available machine-learning classifiers that are appropriate to perform sentiment analysis on this data. I focus on two-- Support Vector Machine (SVM) and Logistic Regression. Each method provides a linear classifier that can work well on sparse data.
 
-Prior to fitting these classifiers, there are a few preprocessing steps of note. The resulting models are designed to predict binary sentiment (i.e. positive or negative) on text reviews. To this end, three-star reviews were removed for the purpose of the analysis. Punctuation was also stripped to prepare the text to be converted into a matrix of token counts. In NLP-speak, unigrams and bigrams were used in creating this matrix. In layman's terms, single words and two-word phrases were used to create the matrix. More sophisticated models will use higher-order n-grams, but this is sufficient for the purpose of the analysis (and to preserve computational efficiency). Finally, the data was split with a train-to-test ratio of 4-to-1 prior to modeling. Classes were re-weighted prior to fitting the classifier to account for imbalanced sampling, as described above. 
+Prior to fitting the classifiers, there are a few preprocessing steps to note. The resulting models are designed to predict binary sentiment (i.e. positive or negative) on text reviews. To this end, three-star reviews (i.e. neutral reviews) are removed. Punctuation was also stripped to prepare the text to be converted into a matrix of token counts. The resulting matrix takes into account unigrams and bigrams, which refer to single words and two-word phrases, respectively. Higher-fidelity models often use higher-order n-grams, but unigrams and bigrams are sufficient for the purpose of this analysis (especially to preserve computational efficiency). Finally, the data is split with a train-to-test ratio of 4-to-1. Classes are re-weighted prior to fitting the classifier to account for imbalanced sampling, as described above. 
 
 ### Results & Discussion
 
-The resulting classification reports are shown below. Accuracy on the test set was quite high for both classifiers -- near 90%. The different objective functions for each classifier resulted in slightly different results for each class. Interestingly, the F1 score was substantially better for positive reviews compared to negative ones in both models. This makes sense, as negativity is a bit more difficult to decipher.
+The resulting classification reports are shown below. Accuracy on the test data quite is high for both classifiers -- near 90%. Interestingly, the F1 score is substantially better for positive reviews compared to negative ones. At a high level, negative language can be more difficult to decipher systematically, especially when only taking into account unigrams and bigrams, as I did for this analysis.
 
 SVM results:  
 
 ![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/svm_results.jpg?raw=true)
 
-LogReg results:  
+Logistic Regression results:  
 
 ![alt text](https://github.com/agushansky/sentiment_analysis/blob/main/images/logistic_reg_results.jpg?raw=true)
 
-Ultimately, models like these can be used to predict sentiment from many forms of input text, including suggestion boxes and online reviews which don't specify the park branch. They can also be used to extract important information from reviews that might otherwise be ignored (e.g. from "neutral" or three-star reviews). Customer sentiment can be used along with assigned star-ratings to predict important outcomes, like customer retention and monetization. Ultimately, while sentiment-prediction models are just one piece of the analytics puzzle, decision-makers would be wise to use them to help make informed decisions.
+Models like these can be used to predict sentiment from many forms of input text, including suggestion boxes and online reviews that don't specify the park branch. They can also be used to extract important information from reviews that might otherwise be ignored (e.g. from "neutral" or three-star reviews) by humans. Customer sentiment can be used in conjunctino with star-ratings to predict important outcomes, like customer retention and monetization. Ultimately, while sentiment-prediction models are just one piece of the analytics puzzle, decision-makers would be wise to use them to help make informed decisions.
