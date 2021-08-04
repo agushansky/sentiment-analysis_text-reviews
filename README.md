@@ -1,6 +1,6 @@
 ## Using Customer Reviews to Make Informed Strategic Decisions About Theme Parks
 
-#### Problem Statement & Motivation
+### Problem Statement & Motivation
 
 Theme parks are at the center of spur-of-the-moment excursions and vacations in the U.S. and around the world. Millions flock each year to try the newest bone-ratting roller-coaster, or reach new heights at near-supersonic speeds. Theme parks are a hallmark of adventure-seekers and adrenaline-junkies, and they collectively bring in billions of dollars yearly. Park owners and operators are constantly looking for new ways to quantify their customers' experiences in order to create more meaningful experiences and drive profits. 
 
