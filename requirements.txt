@@ -1,0 +1,6 @@
+numpy==1.21.3
+pandas==1.0.1
+plotly==4.14.3
+scipy==1.4.1
+session_info==1.0.0
+sklearn==0.24.2
